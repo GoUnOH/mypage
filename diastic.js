@@ -1,8 +1,7 @@
 var srctxt;
 var words;
-var a;
+
 function preload() {
-  a="aaa";
   srctxt = loadStrings('rainbow.txt');
 }
 
@@ -27,8 +26,7 @@ function diastic(seed, words) {
       if(words[j].charAt(i) == c) {
         phrase += words[j];
         phrase += " ";
-        currentWord = j +1;
-        // console.log(words[j]);
+        currentWord = j + 1;
         break;
       }
     }
