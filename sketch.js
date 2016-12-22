@@ -1,12 +1,15 @@
 var srctxt;
 var words;
+var a;
 
 function preload() {
+  a="aaa";
   srctxt = loadStrings('rainbow.txt');
 }
 
-function setUp() {
+function setup() {
   noCanvas();
+  console.log("hi");
   srctxt = join(srctxt, ' ');
   words = splitTokens(srctxt, ' ,.!?');
   var seed = select('#seed');
