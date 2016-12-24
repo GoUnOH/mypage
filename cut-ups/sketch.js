@@ -18,9 +18,12 @@ function preload() {
 function setup() {
 
   noCanvas();
+  input = select('#ta');
   txt = srctxt.join('\n');
   input.html(txt);
   button = select('#submit');
+
+
   // What to do when button pressed
   button.mousePressed(handleInput);
 
@@ -48,7 +51,7 @@ function handleInput() {
 
 // Clear all the divs with remove()
 function clearText() {
-  input.html('');
+  //input.html('');
   for (var i = 0; i < paragraphs.length; i++) {
     paragraphs[i].remove();
   }
